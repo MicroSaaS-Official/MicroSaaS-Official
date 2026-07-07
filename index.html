@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroSaaS | Purveyors of Fine Digital Utilities</title>
+    
+    <!-- Required Metadata Assets -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fonts & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        msBlue: {
+                            DEFAULT: '#0067b8',
+                            hover: '#005da6',
+                            dark: '#005293'
+                        },
+                        charcoal: {
+                            50: '#f2f2f2',
+                            100: '#e6e6e6',
+                            200: '#cccccc',
+                            800: '#2f2f2f',
+                            900: '#1b1b1b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Segoe UI"', 'System-UI', '-apple-system', 'Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .ms-focus-ring:focus-visible {
+            outline: 2px dashed #000000;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal-900 font-sans antialiased h-full flex flex-col">
+
+    <!-- Corporate Header Navigation (Top Bar Only) -->
+    <header class="border-b border-charcoal-100 bg-white sticky top-0 z-40 shrink-0">
+        <div class="max-w-[1600px] mx-auto px-4 md:px-8 h-[54px] flex items-center justify-between">
+            
+            <!-- Left Header: Brand Logo & Stately Navigation Links -->
+            <div class="flex items-center space-x-6 flex-1 lg:flex-initial">
+                <!-- Custom MicroSaaS Monogram Logo -->
+                <a href="#" class="flex items-center space-x-2 mr-2 ms-focus-ring" aria-label="MicroSaaS Homepage">
+                    <img src="/favicon-32x32.png" alt="MicroSaaS" class="w-6 h-6 object-contain shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/32x32/2f2f2f/ffffff?text=MS';">
+                    <span class="font-semibold text-lg tracking-tight text-charcoal-900">MicroSaaS</span>
+                </a>
+
+                <!-- Standard MicroSaaS Navigation Options: Page 1-6 -->
+                <nav class="hidden lg:flex items-center space-x-6 text-[13px] text-charcoal-800">
+                    <a href="#page1" class="hover:underline hover:text-black">Just Page 1</a>
+                    <a href="#page2" class="hover:underline hover:text-black">Just Page 2</a>
+                    <a href="#page3" class="hover:underline hover:text-black">Just Page 3</a>
+                    <a href="#page4" class="hover:underline hover:text-black">Just Page 4</a>
+                    <a href="#page5" class="hover:underline hover:text-black">Just Page 5</a>
+                    <a href="#page6" class="hover:underline hover:text-black">Just Page 6</a>
+                </nav>
+            </div>
+
+            <!-- Right Header: Secondary Actions & Profile Interface -->
+            <div class="flex items-center space-x-6 text-[13px] text-charcoal-800">
+                
+                <!-- Additional Navigation Pages (Page 7-8) -->
+                <nav class="hidden xl:flex items-center space-x-6">
+                    <a href="#page7" class="hover:underline hover:text-black">Just Page 7</a>
+                    <a href="#page8" class="hover:underline hover:text-black">Just Page 8</a>
+                </nav>
+
+                <!-- Stately Action Dropdown -->
+                <div class="relative group hidden md:block">
+                    <button class="hover:underline flex items-center space-x-1 py-1">
+                        <span>All MicroSaaS</span>
+                        <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                    </button>
+                    <!-- Elegant Dropdown Panel -->
+                    <div class="absolute right-0 mt-2 w-48 bg-white border border-charcoal-200 shadow-lg py-2 hidden group-hover:block rounded">
+                        <a href="#about" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px]">About</a>
+                        <a href="#upcoming" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px]">Upcoming Projects</a>
+                    </div>
+                </div>
+
+                <!-- Custom Search Trigger -->
+                <button class="hover:underline flex items-center space-x-1.5" aria-label="Search catalog">
+                    <span>Search</span>
+                    <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                </button>
+
+                <!-- Carl Shopping Utility -->
+                <a href="#carl" class="hover:underline flex items-center space-x-1.5" aria-label="Consult Carl">
+                    <i class="fa-solid fa-cart-shopping text-xs"></i>
+                    <span>Carl</span>
+                </a>
+
+                <!-- Stately Profile Initials Badge -->
+                <button class="w-8 h-8 rounded-full bg-charcoal-800 text-white font-medium text-xs flex items-center justify-center hover:opacity-90 border border-charcoal-200" aria-label="User account details">
+                    MS
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Minimalist Body Centerpiece displaying solely the branding statement -->
+    <main class="flex-grow flex items-center justify-center px-4">
+        <div class="text-center">
+            <h1 class="text-5xl sm:text-7xl md:text-8xl font-light tracking-tight text-charcoal-900 select-none">
+                MicroSaaS
+            </h1>
+        </div>
+    </main>
+
+</body>
+</html>
