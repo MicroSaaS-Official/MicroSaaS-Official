@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroSaaS | Purveyors of Fine Digital Utilities</title>
     
-    <!-- Required Metadata Assets -->
+    <!-- Required Metadata Assets (Preserved exactly as requested) -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -57,41 +57,25 @@
     <header class="border-b border-charcoal-100 bg-white sticky top-0 z-40 shrink-0">
         <div class="max-w-[1600px] mx-auto px-4 md:px-8 h-[54px] flex items-center justify-between">
             
-            <!-- Left Header: Brand Logo & Stately Navigation Links -->
-            <div class="flex items-center space-x-6 flex-1 lg:flex-initial">
-                <!-- Custom MicroSaaS Monogram Logo -->
+            <!-- Left Header: Brand Logo & Title -->
+            <div class="flex items-center space-x-6">
+                <!-- Custom MicroSaaS Logo using relative GitHub Pages friendly path -->
                 <a href="#" class="flex items-center space-x-2 mr-2 ms-focus-ring" aria-label="MicroSaaS Homepage">
-                    <img src="/favicon-32x32.png" alt="MicroSaaS" class="w-6 h-6 object-contain shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/32x32/2f2f2f/ffffff?text=MS';">
+                    <img src="favicon-32x32.png" alt="MicroSaaS Logo" class="w-6 h-6 object-contain shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/32x32/2f2f2f/ffffff?text=MS';">
                     <span class="font-semibold text-lg tracking-tight text-charcoal-900">MicroSaaS</span>
                 </a>
-
-                <!-- Standard MicroSaaS Navigation Options: Page 1-6 -->
-                <nav class="hidden lg:flex items-center space-x-6 text-[13px] text-charcoal-800">
-                    <a href="#page1" class="hover:underline hover:text-black">Just Page 1</a>
-                    <a href="#page2" class="hover:underline hover:text-black">Just Page 2</a>
-                    <a href="#page3" class="hover:underline hover:text-black">Just Page 3</a>
-                    <a href="#page4" class="hover:underline hover:text-black">Just Page 4</a>
-                    <a href="#page5" class="hover:underline hover:text-black">Just Page 5</a>
-                    <a href="#page6" class="hover:underline hover:text-black">Just Page 6</a>
-                </nav>
             </div>
 
-            <!-- Right Header: Secondary Actions & Profile Interface -->
+            <!-- Right Header: Secondary Actions, Dropdown & Profile Interface -->
             <div class="flex items-center space-x-6 text-[13px] text-charcoal-800">
-                
-                <!-- Additional Navigation Pages (Page 7-8) -->
-                <nav class="hidden xl:flex items-center space-x-6">
-                    <a href="#page7" class="hover:underline hover:text-black">Just Page 7</a>
-                    <a href="#page8" class="hover:underline hover:text-black">Just Page 8</a>
-                </nav>
 
-                <!-- Stately Action Dropdown -->
-                <div class="relative group hidden md:block">
-                    <button class="hover:underline flex items-center space-x-1 py-1">
+                <!-- Stately Action Dropdown (All MicroSaaS) -->
+                <div class="relative group">
+                    <button class="hover:underline flex items-center space-x-1 py-1" aria-haspopup="true" aria-expanded="false">
                         <span>All MicroSaaS</span>
                         <i class="fa-solid fa-chevron-down text-[9px]"></i>
                     </button>
-                    <!-- Elegant Dropdown Panel -->
+                    <!-- Elegant Dropdown Panel containing About and Upcoming Projects -->
                     <div class="absolute right-0 mt-2 w-48 bg-white border border-charcoal-200 shadow-lg py-2 hidden group-hover:block rounded">
                         <a href="#about" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px]">About</a>
                         <a href="#upcoming" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px]">Upcoming Projects</a>
@@ -122,7 +106,7 @@
     <main class="flex-grow flex items-center justify-center px-4">
         <div class="text-center">
             <h1 class="text-5xl sm:text-7xl md:text-8xl font-light tracking-tight text-charcoal-900 select-none">
-                MicroSaaS
+                Welcome to MicroSaaS.
             </h1>
         </div>
     </main>
