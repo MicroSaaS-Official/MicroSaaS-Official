@@ -49,6 +49,12 @@
             outline: 2px dashed #000000;
             outline-offset: 2px;
         }
+
+        /* Keep dropdown menu open smoothly when hovering over the container or focusing inside */
+        .dropdown-container:hover .dropdown-menu,
+        .dropdown-container:focus-within .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 <body class="bg-white text-charcoal-900 font-sans antialiased min-h-full flex flex-col">
@@ -70,15 +76,17 @@
             <div class="flex items-center space-x-6 text-[13px] text-charcoal-800">
 
                 <!-- Stately Action Dropdown (All MicroSaaS) -->
-                <div class="relative group">
-                    <button class="hover:underline flex items-center space-x-1 py-1" aria-haspopup="true" aria-expanded="false">
+                <div class="relative dropdown-container py-3">
+                    <button class="hover:underline flex items-center space-x-1" aria-haspopup="true" aria-expanded="false">
                         <span>All MicroSaaS</span>
                         <i class="fa-solid fa-chevron-down text-[9px]"></i>
                     </button>
                     <!-- Elegant Dropdown Panel containing About and Upcoming Projects -->
-                    <div class="absolute right-0 mt-2 w-48 bg-white border border-charcoal-200 shadow-lg py-2 hidden group-hover:block rounded">
-                        <a href="#about" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px]">About</a>
-                        <a href="#upcoming" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px]">Upcoming Projects</a>
+                    <div class="dropdown-menu absolute right-0 top-full hidden w-48 pt-1">
+                        <div class="bg-white border border-charcoal-200 shadow-lg py-2 rounded">
+                            <a href="#about" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px] focus:bg-charcoal-50">About</a>
+                            <a href="#upcoming" class="block px-4 py-2 hover:bg-charcoal-50 text-[12px] focus:bg-charcoal-50">Upcoming Projects</a>
+                        </div>
                     </div>
                 </div>
 
