@@ -51,7 +51,7 @@
         }
     </style>
 </head>
-<body class="bg-white text-charcoal-900 font-sans antialiased h-full flex flex-col">
+<body class="bg-white text-charcoal-900 font-sans antialiased min-h-full flex flex-col">
 
     <!-- Corporate Header Navigation (Top Bar Only) -->
     <header class="border-b border-charcoal-100 bg-white sticky top-0 z-40 shrink-0">
@@ -102,13 +102,55 @@
         </div>
     </header>
 
-    <!-- Minimalist Body Centerpiece displaying solely the branding statement -->
-    <main class="flex-grow flex items-center justify-center px-4">
-        <div class="text-center">
+    <!-- Minimalist Hero Showcase -->
+    <main class="flex-grow">
+        <section class="py-20 px-4 text-center border-b border-charcoal-100">
             <h1 class="text-5xl sm:text-7xl md:text-8xl font-light tracking-tight text-charcoal-900 select-none">
                 Welcome to MicroSaaS.
             </h1>
-        </div>
+        </section>
+
+        <!-- Upcoming Projects Section -->
+        <section id="upcoming" class="max-w-[1200px] mx-auto px-4 md:px-8 py-16">
+            <div class="mb-10 text-center">
+                <span class="text-xs font-semibold tracking-wider text-msBlue uppercase">In Development</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-charcoal-900 mt-1">Upcoming Projects</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1: Blockeor 2: Nuclear Choas -->
+                <div class="border border-charcoal-200 bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-md bg-amber-500/10 text-amber-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-radiation"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider">Coming Soon</span>
+                            <h3 class="text-xl font-bold text-charcoal-900">Blockeor 2: Nuclear Choas</h3>
+                        </div>
+                    </div>
+                    <p class="text-charcoal-800 text-sm leading-relaxed">
+                        A game that is the second version of Blockeor, and will actually be fun to play, and have better graphics, animations, particles, and of course, music.
+                    </p>
+                </div>
+
+                <!-- Project 2: Friday Nights at Youth Group 2: Nightmare Location -->
+                <div class="border border-charcoal-200 bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-md bg-purple-500/10 text-purple-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-ghost"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-purple-600 uppercase tracking-wider">Coming Soon</span>
+                            <h3 class="text-xl font-bold text-charcoal-900">Friday Nights at Youth Group 2: Nightmare Location</h3>
+                        </div>
+                    </div>
+                    <p class="text-charcoal-800 text-sm leading-relaxed">
+                        A scarier sequel with better graphics and more content.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
